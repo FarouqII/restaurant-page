@@ -47,18 +47,16 @@ export const homeLoader = () => {
     divsArray[3].innerHTML = `
     <hr>
     <img class="logo">
-    <div>
-        <ul>
-            <li><button>INSTAGRAM</button></li>
-            <li><button>X</button></li>
-            <li><button class="github-logo">GITHUB</button></li>
-        </ul>
-        <ul>
-            <li><button>RESERVATIONS</button></li>
-            <li><button>LOCATIONS</button></li>
-            <li><button>CONTACT US</button></li>
-        </ul>
-    </div>
+    <ul>
+        <li><button>INSTAGRAM</button></li>
+        <li><button>X</button></li>
+        <li><button class="github-logo">GITHUB</button></li>
+    </ul>
+    <ul>
+        <li><button>RESERVATIONS</button></li>
+        <li><button>LOCATIONS</button></li>
+        <li><button>CONTACT US</button></li>
+    </ul>
     `
     for (let i = 0; i < divsArray.length; i++) contentDiv.appendChild(divsArray[i]);
 }
