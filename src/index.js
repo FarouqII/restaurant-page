@@ -1,9 +1,11 @@
 import "./styles.css";
 import logo from './assets/YasmineLogo.png';
 import { homeLoader } from './loadhome';
+import { sliderAnimation } from "./slideranimation";
 
 console.log("Working");
 homeLoader();
+sliderAnimation();
 
 const img = document.createElement('img');
 img.src = logo;

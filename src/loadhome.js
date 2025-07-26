@@ -1,3 +1,9 @@
+import logo from './assets/YasmineLogo.png';
+import slider1 from './assets/slider/slider-1.jpg';
+import slider2 from './assets/slider/slider-2.jpg';
+import slider3 from './assets/slider/slider-3.jpg';
+import slider4 from './assets/slider/slider-4.jpg';
+
 export const homeLoader = () => {
     const contentDiv = document.getElementById("content");
     let divsArray = [];
@@ -13,19 +19,34 @@ export const homeLoader = () => {
 
     divsArray[0].innerHTML = `
     <h1>
-        <span>The sent of <b>home</b>,</span>
+        <span>The scent of <b>home</b>,</span>
         <span>The taste of <b>tradition</b>.</span>
     </h1>
     <p>Vibrant flavors and rich palettes</p>
     `
     divsArray[1].innerHTML = `
     <div id="story-text">
-        <p>The Story</p>
-        <h2>Yasmine</h2>
-        <p></p>
+        <img class="logo" src=${logo} alt="Logo"}>
+        <h3>The Story</h3>
+        <p>A modern Levantine kitchen inspired by the flavors and spirit of the Eastern Mediterranean.</p>
+        <p>Founded in Brooklyn in 2015, Yasmine brings together timeless recipes, warm hospitality, and the aromatic beauty of jasmine.</p>
+        <p>With locations in New Jersey, Toronto, and Montreal, we serve vibrant mezze, fire-grilled dishes, and fresh breads in a setting that honors tradition with a contemporary touch.</p>
     </div>
-    <div id="story-image"></div>
+    <div id="slider-container">
+        <div id="slider-track">
+            <img class="slider-img" src=${slider1} alt="Slider Image">
+            <img class="slider-img" src=${slider2} alt="Slider Image">
+            <img class="slider-img" src=${slider3} alt="Slider Image">
+            <img class="slider-img" src=${slider4} alt="Slider Image">
+
+            <img class="slider-img" src=${slider1} alt="Slider Image">
+            <img class="slider-img" src=${slider2} alt="Slider Image">
+            <img class="slider-img" src=${slider3} alt="Slider Image">
+            <img class="slider-img" src=${slider4} alt="Slider Image">
+        </div>
+    </div>
     `
+
     divsArray[2].innerHTML = `
     <button class="location-tile">
         <h3>Brooklyn</h3>

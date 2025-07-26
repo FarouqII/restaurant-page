@@ -23,6 +23,7 @@ body {
     background: #121212;
 
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
 header {
@@ -108,8 +109,6 @@ button:hover {
     text-align: right;
     padding: 13vw;
 
-    color: white;
-
     background: url("./assets/yasmine-3.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -141,6 +140,65 @@ button:hover {
 
 #home > p {
     font-size: 1.5rem;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+#story-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 15px;
+
+    width: 30vw;
+    height: 80%;
+    padding: 3vw;
+
+    font-size: 1.2rem;
+
+    background-color: #000000c5;
+
+    position: absolute;
+
+    z-index: 9;
+}
+
+h3 {
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#slider-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+
+  z-index: 0;
+}
+
+#slider-track {
+  display: flex;
+  height: 100%;
+  will-change: transform;
+  gap: 50px;
+}
+
+.slider-img {
+  flex-shrink: 0;
+  width: 3s0vw;
+  height: 100%;
+  object-fit: cover;
 }
 
 #footer {
