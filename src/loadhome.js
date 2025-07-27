@@ -48,22 +48,27 @@ export const homeLoader = () => {
     `
 
     divsArray[2].innerHTML = `
-    <button class="location-tile">
+    <h1 style="transform: rotate(270deg);
+    margin-right: -3vw;">FIND US</h1>
+    <button class="location-tile brooklyn">
         <h3>Brooklyn</h3>
         <p>New York City</p>
+        <span id="flagship">FLAGSHIP</span>
     </button>
-    <button class="location-tile">
+    <button class="location-tile city-jc">
         <h3>Jersey City</h3>
         <p>New Jersey</p>
     </button>
-    <button class="location-tile">
+    <button class="location-tile city-montreal">
         <h3>Montreal</h3>
         <p>Quebec</p>
     </button>
-    <button class="location-tile">
+    <button class="location-tile city-toronto">
         <h3>Toronto</h3>
         <p>Ontario</p>
     </button>
+    <h1 style="transform: rotate(90deg);
+    margin-left: -3vw;">FIND US</h1>
     `
     divsArray[3].innerHTML = `
     <hr>
