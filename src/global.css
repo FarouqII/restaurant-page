@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Cinzel Decorative";
+    src: url("./assets/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+    background: #121212;
+
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+h1, h2, h3, p {
+    cursor: default;
+}
+
+/* ------------------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #121212;
+    position: fixed;
+    padding: 0 13vw;
+
+    height: 120px;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    margin-top: 0px;
+    padding: 0 20px;
+
+    overflow: visible;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(18,18,18,1), rgba(18,18,18,0));
+    pointer-events: none;
+}
+
+header > .logo {
+    margin-right: 50px;
+}
+
+.logo {
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+button {
+    background: none;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    font-family: "Montserrat";
+    padding: 20px;
+
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #D4AF3780;
+}
+
+#reserve {
+    background: #222222;
+    font-weight: 700;
+}
+
+#reserve:hover {
+    background: #D4AF37;
+}
+
+/* ------------------------------------------------------------- */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 13vw;
+}
+
+hr {
+    width: 100%;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    width: 100%;
+    padding: 5vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+}
+
+li > button {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+#footer-content > span {
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
