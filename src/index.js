@@ -5,9 +5,8 @@ import { loadMenu } from './loadmenu';
 import { sliderAnimation } from "./slideranimation";
 
 console.log("Working");
-loadMenu();
-//homeLoader();
-//sliderAnimation();
+homeLoader();
+sliderAnimation();
 
 const img = document.createElement('img');
 img.src = logo;
@@ -16,3 +15,12 @@ img.classList.add('logo');
 
 const header = document.querySelector('header');
 header.prepend(img);
+
+const menuBtn = document.getElementById('nav-menu');
+menuBtn.addEventListener("click", loadMenu);
+
+const homeBtn = document.getElementById('nav-home');
+homeBtn.addEventListener("click", () => {
+    homeLoader();
+    sliderAnimation();
+})

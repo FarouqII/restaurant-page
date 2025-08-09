@@ -1,3 +1,6 @@
+import './home.css';
+import { loadMenu } from './loadmenu';
+import { sliderAnimation } from "./slideranimation";
 import logo from './assets/YasmineLogo.png';
 import slider1 from './assets/slider/slider-1.jpg';
 import slider2 from './assets/slider/slider-2.jpg';
@@ -6,6 +9,7 @@ import slider4 from './assets/slider/slider-4.jpg';
 
 export const homeLoader = () => {
     const contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = '';
     let divsArray = [];
     for (let i = 0; i < 4; i++) {
         let div = document.createElement("div");
@@ -89,3 +93,12 @@ export const homeLoader = () => {
     `
     for (let i = 0; i < divsArray.length; i++) contentDiv.appendChild(divsArray[i]);
 }
+
+const menuBtn = document.getElementById('nav-menu');
+menuBtn.addEventListener("click", loadMenu);
+
+const homeBtn = document.getElementById('nav-home');
+homeBtn.addEventListener("click", () => {
+    homeLoader();
+    sliderAnimation();
+})

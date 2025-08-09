@@ -1,4 +1,6 @@
 import './menu.css';
+import { homeLoader } from './loadhome';
+import { sliderAnimation } from "./slideranimation";
 import logo from './assets/YasmineLogo.png';
 
 export const loadMenu = () => {
@@ -44,3 +46,12 @@ export const loadMenu = () => {
         </div>
         `;
 }
+
+const menuBtn = document.getElementById('nav-menu');
+menuBtn.addEventListener("click", loadMenu);
+
+const homeBtn = document.getElementById('nav-home');
+homeBtn.addEventListener("click", () => {
+    homeLoader();
+    sliderAnimation();
+})
